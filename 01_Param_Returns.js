@@ -2,9 +2,8 @@ function identifyAnimal1(photo) {
   // Do somethiing
 }
 
-const animal1 =
-  /** What does the return represent? A category, or a biological species? */
-  identifyAnimal1(/** I don't know what to include here - is it a blob, a URL, or string? */);
+/** What does the return represent? A category, or a biological species? */
+const animal1 = identifyAnimal1(/** I don't know what to include here - is it a blob, a URL, or string? */);
 
 /**
  * @param {Blob} photo Include description here if it is not obvious. Prefer good naming.
