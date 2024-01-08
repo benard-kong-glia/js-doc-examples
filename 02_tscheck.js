@@ -2,7 +2,6 @@
 
 function identifyAnimal1(photo) {
   // Do somethiing
-  console.log(photo);
 }
 
 const animal1 =
