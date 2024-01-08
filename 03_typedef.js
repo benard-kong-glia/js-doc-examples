@@ -62,3 +62,5 @@ const james = {
  *   students: Student[],
  * }} School
  */
+
+export {};
