@@ -22,6 +22,8 @@ export class Student {
   /**
    * New grade is 0 if teacher refuses, or student is not in teacher's class.
    *
+   * Learn the best way to bribe a teacher {@link [here](https://www.example.com)}
+   *
    * @param bribeAmount USD
    * @returns bribeResult Possible Reasons: {@link BribeTeacherResult}
    *
@@ -54,13 +56,15 @@ export class Teacher {
   /**
    * Accepts bribe if above teacher's personal threshold
    *
-   * @param bribeAmount USD
    * @returns bribeResult
    *
    * @example
    * const { newNetWorth, reasoning } = teacher.determineAcceptBribe(99);
    */
-  determineAcceptBribe(bribeAmount: number): { newNetWorth: number; reasoning: string } {
+  determineAcceptBribe(
+    /** CAD */
+    bribeAmount: number,
+  ): { newNetWorth: number; reasoning: string } {
     const reasoning = Math.random() < 0.5 ? "Teacher refused" : "Not in teacher's class";
 
     return { newNetWorth: 0, reasoning };
