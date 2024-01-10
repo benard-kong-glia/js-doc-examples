@@ -25,7 +25,7 @@ export class Student {
    * Learn the best way to bribe a teacher {@link [here](https://www.example.com)}
    *
    * @param bribeAmount USD
-   * @returns bribeResult Possible Reasons: {@link BribeTeacherResult}
+   * @returns `bribeResult` Possible Reasons for new grade: {@link BribeTeacherResult}
    *
    * @example
    * const { newGrade, reasoning } = student.bribeTeacher("123", "456", 9384);
@@ -56,7 +56,7 @@ export class Teacher {
   /**
    * Accepts bribe if above teacher's personal threshold
    *
-   * @returns bribeResult
+   * @returns `bribeResult`
    *
    * @example
    * const { newNetWorth, reasoning } = teacher.determineAcceptBribe(99);
